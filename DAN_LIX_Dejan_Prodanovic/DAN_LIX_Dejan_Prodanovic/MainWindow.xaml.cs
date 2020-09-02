@@ -23,6 +23,7 @@ namespace DAN_LIX_Dejan_Prodanovic
         public MainWindow()
         {
             InitializeComponent();
+            DataContext = new StartMenuViewModel(this);
         }
     }
 }

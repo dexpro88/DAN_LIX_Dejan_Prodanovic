@@ -9,7 +9,7 @@
              d:DesignWidth="300">
     <DockPanel>
         <DockPanel.Background>
-            <ImageBrush ImageSource="/MemoryGame;component/Assets/black_background.jpg"
+            <ImageBrush ImageSource="/DAN_LIX_Dejan_Prodanovic;component/Assets/black_background.jpg"
                         Stretch="UniformToFill" />
         </DockPanel.Background>
         <TextBlock DockPanel.Dock="Top"
