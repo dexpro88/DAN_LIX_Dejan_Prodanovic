@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace DAN_LIX_Dejan_Prodanovic.ViewModels
 
         private bool _gameLost;
         private bool _gameWon;
+
+       
 
         public int MatchAttempts
         {
@@ -105,5 +108,7 @@ namespace DAN_LIX_Dejan_Prodanovic.ViewModels
             MatchAttempts--;
 
         }
+
+       
     }
 }

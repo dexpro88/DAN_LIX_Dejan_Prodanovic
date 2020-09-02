@@ -91,7 +91,7 @@ namespace DAN_LIX_Dejan_Prodanovic.ViewModels
                     return _model.ImageSource;
 
 
-                return "/DAN_LIX_Dejan_Prodanovic;component/Assets/mystery_image.jpg";
+                return "/DAN_LIX_Dejan_Prodanovic;component/Assets/mystery_image1.jpg";
             }
         }
 

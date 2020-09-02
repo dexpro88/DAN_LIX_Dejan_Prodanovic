@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,6 +87,7 @@ namespace DAN_LIX_Dejan_Prodanovic.ViewModels
             {
                 GameInfo.GameStatus(true);
                 Timer.Stop();
+                WriteToFile();
             }
 
         }
@@ -95,6 +97,23 @@ namespace DAN_LIX_Dejan_Prodanovic.ViewModels
         {
 
             SetupGame(Category);
+        }
+
+        void WriteToFile()
+        {
+            DateTime date = DateTime.Now;
+            string dateStr = string.Format("{0}/{1}/{2} {3}:{4}:{5}", date.Day, date.Month, date.Year,
+                date.Hour, date.Minute, date.Second);
+
+            int totalTime = Timer.Time.Seconds;
+            totalTime += Timer.Time.Minutes * 60;
+
+            using (StreamWriter sw = File.AppendText(@"..\..\IgraPamcenja.txt"))
+            {
+
+                sw.WriteLine(dateStr + " Games lasted " + totalTime + "s");
+
+            }
         }
     }
 }

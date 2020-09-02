@@ -129,8 +129,9 @@
   <ItemGroup>
     <Resource Include="Assets\black_background.jpg" />
     <Resource Include="Assets\greenblock.png" />
-    <Resource Include="Assets\mystery_image.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Assets\mystery_image1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
